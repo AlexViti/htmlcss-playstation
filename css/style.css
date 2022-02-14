@@ -4,6 +4,10 @@
 	--header-height: calc(var(--sony-logo-bar-height) + var(--navbar-height));
 }
 
+.rounded-10 {
+	border-radius: 1rem;
+}
+
 .btn_buy {
 	color: white;
 	background-color: #cd3d0f;
@@ -44,6 +48,14 @@ main {
 	width: 55%;
 }
 
-.first_jumbotron {
+.returnal_jumbotron {
 	background-image: url(../img/jumbo-bg.png);
+}
+
+.slide_selected {
+	border: 3px solid blue;
+}
+
+.slide>img {
+	border: 3px solid transparent;
 }
