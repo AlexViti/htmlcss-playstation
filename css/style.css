@@ -4,6 +4,11 @@
 	--header-height: calc(var(--sony-logo-bar-height) + var(--navbar-height));
 }
 
+.btn_buy {
+	color: white;
+	background-color: #cd3d0f;
+}
+
 /* Header */
 
 header .bar_sony_logo {
@@ -24,11 +29,19 @@ main {
 	padding-top: var(--header-height);
 }
 
+
 .jumbotron {
-	height: calc(100vh - var(--header-height));
 	background-position: top;
 	background-repeat: no-repeat;
-	background-size: fill;
+	background-size: cover;
+}
+
+.jumbotron .row {
+	min-height: 550px;
+}
+
+.hero-banner-logo {
+	width: 55%;
 }
 
 .first_jumbotron {
