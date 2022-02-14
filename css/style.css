@@ -1,3 +1,36 @@
-header .logo_sony {
-	height: 36px;
+:root {
+	--sony-logo-bar-height: 36px;
+	--navbar-height: 64px;
+	--header-height: calc(var(--sony-logo-bar-height) + var(--navbar-height));
+}
+
+/* Header */
+
+header .bar_sony_logo {
+	height: var(--sony-logo-bar-height);
+}
+
+header .sony_logo {
+	height: calc(var(--sony-logo-bar-height) / 3);
+}
+
+header .navbar {
+	height: var(--navbar-height);
+}
+
+/* Main */
+
+main {
+	padding-top: var(--header-height);
+}
+
+.jumbotron {
+	height: calc(100vh - var(--header-height));
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: fill;
+}
+
+.first_jumbotron {
+	background-image: url(../img/jumbo-bg.png);
 }
