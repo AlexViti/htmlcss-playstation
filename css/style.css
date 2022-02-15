@@ -24,6 +24,19 @@
 	background-color: #cd3d0f;
 }
 
+.dropdown-chevron::after {
+	content: url(../img/chevron-down-solid.svg);
+	display: inline-block;
+	line-height: 1rem;
+	width: .5rem;
+	margin-left: .3rem;
+}
+
+.dropdown-chevron:hover:after {
+	content: url(../img/chevron-down-solid-hover.svg);
+}
+
+
 /* Header */
 
 header .bar_sony_logo {
@@ -67,6 +80,6 @@ main {
 	border: 3px solid var(--light-blue-color);
 }
 
-.slide>img {
+.slide_thumb>img {
 	border: 3px solid transparent;
 }
