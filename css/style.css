@@ -1,6 +1,6 @@
 :root {
 	--sony-logo-bar-height: 36px;
-	--navbar-height: 64px;
+	--navbar-height: 68px;
 	--header-height: calc(var(--sony-logo-bar-height) + var(--navbar-height));
 	--light-blue-color: #0072ce;
 	--blue-color: #2d64e6;
@@ -19,7 +19,7 @@
 	border-radius: 1rem;
 }
 
-.btn_buy {
+.btn-orange {
 	color: white;
 	background-color: #cd3d0f;
 }
@@ -36,6 +36,27 @@
 	content: url(../img/chevron-down-solid-hover.svg);
 }
 
+.show.dropdown-chevron::after {
+	transform: rotate(180deg);
+}
+
+.nav_list {
+	color: var(--blue-color);
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.nav_list a {
+	margin-left: -5px;
+	margin-right: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+.nav_ico:hover {
+	background-color: white;
+	box-shadow: 0 0 5px gray;
+}
 
 /* Header */
 
@@ -47,9 +68,11 @@ header .sony_logo {
 	height: calc(var(--sony-logo-bar-height) / 3);
 }
 
-header .navbar {
+
+
+/* header .navbar {
 	height: var(--navbar-height);
-}
+} */
 
 /* Main */
 
