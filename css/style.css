@@ -2,6 +2,17 @@
 	--sony-logo-bar-height: 36px;
 	--navbar-height: 64px;
 	--header-height: calc(var(--sony-logo-bar-height) + var(--navbar-height));
+	--light-blue-color: #0072ce;
+	--blue-color: #2d64e6;
+	--gray-color:
+}
+
+.text-light-blue {
+	color: var(--light-blue-color);
+}
+
+.text-blue {
+	color: var(--blue-color);
 }
 
 .rounded-10 {
@@ -53,7 +64,7 @@ main {
 }
 
 .slide_selected {
-	border: 3px solid blue;
+	border: 3px solid var(--light-blue-color);
 }
 
 .slide>img {
