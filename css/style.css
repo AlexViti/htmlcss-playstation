@@ -99,6 +99,10 @@ main {
 	background-image: url(../img/jumbo-bg.png);
 }
 
+.itTakesTwo_jumbotron {
+	background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
+
 .slide_selected {
 	border: 3px solid var(--light-blue-color);
 }
