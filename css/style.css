@@ -7,6 +7,11 @@
 	--gray-color:
 }
 
+h1 {
+	font-size: 46px;
+	line-height: 1.4;
+}
+
 .text-light-blue {
 	color: var(--light-blue-color);
 }
@@ -37,7 +42,7 @@
 }
 
 .show.dropdown-chevron::after {
-	transform: rotate(180deg);
+	transform: rotate(180deg) translateY(-25%);
 }
 
 .nav_list {
@@ -88,11 +93,11 @@ main {
 }
 
 .jumbotron .row {
-	height: 587px;
+	min-height: 587px;
 }
 
 .hero-banner-logo {
-	width: 55%;
+	width: 60%;
 }
 
 .returnal_jumbotron {
@@ -109,6 +114,10 @@ main {
 
 .slide_thumb>img {
 	border: 3px solid transparent;
+}
+
+.thumb {
+	border-bottom: 2px solid transparent;
 }
 
 .thumb:hover, .thumb_selected {
