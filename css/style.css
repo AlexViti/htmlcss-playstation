@@ -125,12 +125,20 @@ main {
 	background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
 }
 
+.slide_thumb {
+	border: 3px solid transparent;
+	transition: margin .6s;
+}
 .slide_selected {
 	border: 3px solid var(--light-blue-color);
 }
 
 .slide_thumb>img {
 	border: 3px solid transparent;
+}
+
+.slide_thumb:hover {
+	margin-top: -15px;
 }
 
 .thumb {
@@ -157,4 +165,8 @@ main {
 
 footer .globe-icon {
 	height: 1rem;
+}
+
+.sie_logo {
+	height: 60px;
 }
