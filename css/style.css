@@ -7,8 +7,10 @@
 	--dark-blue-color: #00439c;
 	--indigo-color: #161c3b;
 	--gray-color: #bebcbb;
+	--light-gray: #d9dadc;
 	--gray-text: #757575;
 	--orange-color: #cd3d0f;
+	--bg-botn: transparent;
 }
 
 h1 {
@@ -53,19 +55,57 @@ h1 {
 	border-radius: 1rem;
 }
 
-/* .btn {
-	border: none;
+/* Buttons */
+
+.botn {
+	--text-color: white;
+	--border-size: 2px;
+	display: inline-block;
+	background-color: var(--bg-botn);
+	text-decoration: none;
+	color: var(--text-color);
+	padding: .5rem 1rem;
+	border-radius: 100px;
+	position: relative;
+	/* border: var(--border-size) solid transparent; */
 }
 
-.btn:hover {
-	border: 6px double;
-	margin: -6px -6px;
-} */
+.botn:hover {
+	color: var(--text-color);
+}
 
-.btn-orange {
-	color: white;
-	background-color: var(--orange-color);
-	border-color: var(--orange-color);
+.botn:hover::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: calc(var(--border-size) * -2);
+	left: calc(var(--border-size) * -2);
+	height: calc(100% + (4 * var(--border-size)));
+	width: calc(100% + (4 * var(--border-size)));
+	border: var(--border-size) solid var(--bg-botn);
+	border-radius: 100px;
+}
+
+.botn-black {
+	--bg-botn: black;
+}
+
+.botn-orange {
+	--bg-botn: var(--orange-color);
+}
+
+.botn-blue {
+	--bg-botn: var(--light-blue-color);
+}
+
+.botn-light-gray {
+	--bg-botn: var(--light-gray);
+	--text-color: var(--light-blue-color)
+}
+
+.botn-white {
+	--bg-botn: white;
+	--text-color: black;
 }
 
 .dropdown-chevron::after {
