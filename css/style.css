@@ -129,6 +129,7 @@ main {
 	border: 3px solid transparent;
 	transition: margin .6s;
 }
+
 .slide_selected {
 	border: 3px solid var(--light-blue-color);
 }
@@ -142,11 +143,19 @@ main {
 }
 
 .thumb {
+	opacity: .75;
+}
+
+.thumb .thumb_card {
 	border-bottom: 2px solid transparent;
 }
 
 .thumb:hover, .thumb_selected {
 	cursor: pointer;
+	opacity: 1;
+}
+
+.thumb:hover .thumb_card, .thumb_selected .thumb_card {
 	border-bottom: 2px solid var(--blue-color);
 }
 
