@@ -20,6 +20,7 @@ body {
 
 h1 {
 	font-size: 42px;
+	font-weight: 600;
 }
 
 h2 {
@@ -28,13 +29,13 @@ h2 {
 }
 
 h3 {
-	font-size: 28px;
+	font-size: 32px;
 	font-weight: 600;
 }
 
 .subtitle {
 	color: var(--gray-text);
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 600;
 	line-height: 1.2;
 }
@@ -84,7 +85,7 @@ h3 {
 	background-color: var(--bg-botn);
 	text-decoration: none;
 	color: var(--text-color);
-	padding: .5rem 1rem;
+	padding: .5em 1em .6em;
 	border-radius: 100px;
 	position: relative;
 	font-weight: 600;
@@ -122,7 +123,7 @@ h3 {
 }
 
 .botn-blue {
-	--bg-botn: var(--light-blue-color);
+	--bg-botn: var(--blue-color);
 }
 
 .botn-light-gray {
@@ -140,7 +141,7 @@ h3 {
 	display: inline-block;
 	line-height: 1rem;
 	width: .5rem;
-	margin-left: .3rem;
+	margin-left: .5rem;
 }
 
 .dropdown-chevron:hover:after {
@@ -290,4 +291,10 @@ footer .globe-icon {
 footer p.copyright {
 	font-size: 13px;
 	font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+	footer p.copyright {
+		font-size: 14px;
+	}
 }
