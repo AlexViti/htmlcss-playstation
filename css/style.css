@@ -13,6 +13,11 @@
 	--bg-botn: transparent;
 }
 
+body {
+	font-weight: 500;
+	overflow-x: hidden;
+}
+
 h1 {
 	font-size: 42px;
 }
@@ -34,9 +39,9 @@ h3 {
 	line-height: 1.2;
 }
 
-.fw-500 {
+/* .fw-500 {
 	font-weight: 500;
-}
+} */
 
 .fw-600 {
 	font-weight: 600;
@@ -270,10 +275,19 @@ main {
 
 /* Footer */
 
+.ps-logo-footer {
+	height: 78px;
+}
+
 footer .globe-icon {
-	height: 1rem;
+	height: 1.4rem;
 }
 
 .sie_logo {
-	height: 60px;
+	height: 50px;
+}
+
+footer p.copyright {
+	font-size: 13px;
+	font-weight: 600;
 }
