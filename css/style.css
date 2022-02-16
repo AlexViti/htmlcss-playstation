@@ -7,6 +7,8 @@
 	--dark-blue-color: #00439c;
 	--indigo-color: #161c3b;
 	--gray-color: #bebcbb;
+	--gray-text: #757575;
+	--orange-color: #cd3d0f;
 }
 
 h1 {
@@ -18,8 +20,21 @@ h1 {
 	color: var(--light-blue-color);
 }
 
+.text-gray {
+	color: var(--gray-color);
+}
+
 .text-blue {
 	color: var(--blue-color);
+}
+
+.subtitle {
+	color: var(--gray-text);
+}
+
+.subtitle,
+.fw-500 {
+	font-weight: 500;
 }
 
 .bg-gray {
@@ -38,9 +53,19 @@ h1 {
 	border-radius: 1rem;
 }
 
+/* .btn {
+	border: none;
+}
+
+.btn:hover {
+	border: 6px double;
+	margin: -6px -6px;
+} */
+
 .btn-orange {
 	color: white;
-	background-color: #cd3d0f;
+	background-color: var(--orange-color);
+	border-color: var(--orange-color);
 }
 
 .dropdown-chevron::after {
@@ -89,7 +114,6 @@ header .bar_sony_logo {
 header .sony_logo {
 	height: calc(var(--sony-logo-bar-height) / 3);
 }
-
 
 
 /* header .navbar {
