@@ -4,8 +4,9 @@
 	--header-height: calc(var(--sony-logo-bar-height) + var(--navbar-height));
 	--light-blue-color: #0072ce;
 	--blue-color: #2d64e6;
-	--gray-color: #bebcbb;
+	--dark-blue-color: #00439c;
 	--indigo-color: #161c3b;
+	--gray-color: #bebcbb;
 }
 
 h1 {
@@ -27,6 +28,10 @@ h1 {
 
 .bg-indigo {
 	background-color: var(--indigo-color);
+}
+
+.bg-dark-blue {
+	background-color: var(--dark-blue-color);
 }
 
 .rounded-10 {
@@ -137,6 +142,19 @@ main {
 	border-bottom: 2px solid var(--blue-color);
 }
 
-#socialMedia img {
-	max-width: 120px;
+@media screen and (min-width: 576px) {
+	
+	#socialMedia .row{
+		max-width: 560px;
+	}
+	
+	#socialMedia img {
+		max-width: 120px;
+	}
+}
+
+/* Footer */
+
+footer .globe-icon {
+	height: 1rem;
 }
