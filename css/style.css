@@ -14,8 +14,32 @@
 }
 
 h1 {
-	font-size: 46px;
-	line-height: 1.4;
+	font-size: 42px;
+}
+
+h2 {
+	font-size: 38px;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.subtitle {
+	color: var(--gray-text);
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.fw-500 {
+	font-weight: 500;
+}
+
+.fw-600 {
+	font-weight: 600;
 }
 
 .text-light-blue {
@@ -28,15 +52,6 @@ h1 {
 
 .text-blue {
 	color: var(--blue-color);
-}
-
-.subtitle {
-	color: var(--gray-text);
-}
-
-.subtitle,
-.fw-500 {
-	font-weight: 500;
 }
 
 .bg-gray {
@@ -67,6 +82,7 @@ h1 {
 	padding: .5rem 1rem;
 	border-radius: 100px;
 	position: relative;
+	font-weight: 600;
 }
 
 .botn:hover {
@@ -88,7 +104,6 @@ h1 {
 }
 
 .botn:hover::after {
-	display: block;
 	border-color: var(--bg-botn);
 	transform: scale(1);
 }
@@ -107,7 +122,7 @@ h1 {
 
 .botn-light-gray {
 	--bg-botn: var(--light-gray);
-	--text-color: var(--light-blue-color)
+	--text-color: var(--blue-color);
 }
 
 .botn-white {
@@ -129,6 +144,14 @@ h1 {
 
 .show.dropdown-chevron::after {
 	transform: rotate(180deg) translateY(-25%);
+}
+
+#topNavbar .nav-link {
+	color: black; 
+	font-weight: 500;
+}
+#topNavbar .nav-link:hover {
+	color: var(--light-blue-color);
 }
 
 .nav_list {
@@ -162,17 +185,11 @@ header .sony_logo {
 	height: calc(var(--sony-logo-bar-height) / 3);
 }
 
-
-/* header .navbar {
-	height: var(--navbar-height);
-} */
-
 /* Main */
 
 main {
 	padding-top: var(--header-height);
 }
-
 
 .jumbotron {
 	background-position: top;
@@ -181,7 +198,7 @@ main {
 }
 
 .jumbotron .row {
-	min-height: 587px;
+	min-height: 600px;
 }
 
 .hero-banner-logo {
@@ -226,8 +243,18 @@ main {
 	opacity: 1;
 }
 
-.thumb:hover .thumb_card, .thumb_selected .thumb_card {
+.thumb:hover .thumb_card,
+.thumb_selected .thumb_card {
 	border-bottom: 2px solid var(--blue-color);
+}
+
+.new-releases-thumb:hover {
+	cursor: pointer;
+	transform: scale(1.03);
+}
+
+.title-logo {
+	width: 60%;
 }
 
 @media screen and (min-width: 576px) {
