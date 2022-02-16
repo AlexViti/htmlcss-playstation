@@ -67,14 +67,13 @@ h1 {
 	padding: .5rem 1rem;
 	border-radius: 100px;
 	position: relative;
-	/* border: var(--border-size) solid transparent; */
 }
 
 .botn:hover {
 	color: var(--text-color);
 }
 
-.botn:hover::after {
+.botn::after {
 	content: '';
 	display: block;
 	position: absolute;
@@ -82,8 +81,16 @@ h1 {
 	left: calc(var(--border-size) * -2);
 	height: calc(100% + (4 * var(--border-size)));
 	width: calc(100% + (4 * var(--border-size)));
-	border: var(--border-size) solid var(--bg-botn);
+	border: var(--border-size) solid transparent;
 	border-radius: 100px;
+	transform: scale(.9);
+	transition: transform .1s;
+}
+
+.botn:hover::after {
+	display: block;
+	border-color: var(--bg-botn);
+	transform: scale(1);
 }
 
 .botn-black {
