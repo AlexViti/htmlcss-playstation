@@ -15,37 +15,25 @@
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 500;
 	overflow-x: hidden;
 }
 
 h1 {
-	font-size: 42px;
-	font-weight: 550;
+	font-size: 40px;
 }
 
 h2 {
 	font-size: 38px;
-	font-weight: 550;
 }
 
 h3 {
 	font-size: 32px;
-	font-weight: 550;
 }
 
 .subtitle {
 	color: var(--gray-text);
 	font-size: 20px;
 	line-height: 1.2;
-}
-
-.fw-550 {
-	font-weight: 550;
-}
-
-.fw-600 {
-	font-weight: 600;
 }
 
 .text-light-blue {
@@ -74,6 +62,11 @@ h3 {
 
 .rounded-10 {
 	border-radius: 1rem;
+}
+
+.registred {
+	font-size: .5em;
+	vertical-align: super;
 }
 
 /* Buttons */
@@ -252,6 +245,10 @@ main {
 .thumb:hover .thumb_card,
 .thumb_selected .thumb_card {
 	border-bottom: 2px solid var(--blue-color);
+}
+
+.new-releases-thumb {
+	transition: transform .2s;
 }
 
 .new-releases-thumb:hover {
