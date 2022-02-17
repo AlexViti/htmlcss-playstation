@@ -1,8 +1,11 @@
-:root {
-	--sony-logo-bar-height: 36px;
+/* COMMON */
+
+:root { /* Variables */
+	--sony-logo-bar-height: 36px; /* Sizes */
 	--navbar-height: 68px;
 	--header-height: calc(var(--sony-logo-bar-height) + var(--navbar-height));
-	--light-blue-color: #0072ce;
+	
+	--light-blue-color: #0072ce; /* Colors */
 	--blue-color: #2d64e6;
 	--dark-blue-color: #00439c;
 	--indigo-color: #161c3b;
@@ -18,10 +21,6 @@ body {
 	overflow-x: hidden;
 }
 
-h1 {
-	font-size: 40px;
-}
-
 h2 {
 	font-size: 38px;
 }
@@ -35,6 +34,13 @@ h3 {
 	font-size: 20px;
 	line-height: 1.2;
 }
+
+.registred {
+	font-size: .5em;
+	vertical-align: super;
+}
+
+/* Framework ovverride/integration */
 
 .text-light-blue {
 	color: var(--light-blue-color);
@@ -64,24 +70,21 @@ h3 {
 	border-radius: 1rem;
 }
 
-.registred {
-	font-size: .5em;
-	vertical-align: super;
-}
-
 /* Buttons */
 
 .botn {
-	--text-color: white;
 	--border-size: 2px;
-	display: inline-block;
-	background-color: var(--bg-botn);
-	text-decoration: none;
-	color: var(--text-color);
-	padding: .5em 1em;
 	border-radius: 100px;
+	padding: .5em 1em;
+	
+	--text-color: white;
+	color: var(--text-color);
+	text-decoration: none;
+	
+	display: inline-block;
 	position: relative;
-	font-weight: 550;
+	
+	background-color: var(--bg-botn);
 }
 
 .botn:hover {
@@ -91,19 +94,23 @@ h3 {
 .botn::after {
 	content: '';
 	display: block;
+	height: calc(100% + (4 * var(--border-size)));
+	width: calc(100% + (4 * var(--border-size)));
+	
 	position: absolute;
 	top: calc(var(--border-size) * -2);
 	left: calc(var(--border-size) * -2);
-	height: calc(100% + (4 * var(--border-size)));
-	width: calc(100% + (4 * var(--border-size)));
+	
 	border: var(--border-size) solid transparent;
 	border-radius: 100px;
-	transform: scale(.9);
+	
 	transition: transform .1s;
+	transform: scale(.9);
 }
 
 .botn:hover::after {
 	border-color: var(--bg-botn);
+	
 	transform: scale(1);
 }
 
@@ -132,8 +139,9 @@ h3 {
 .dropdown-chevron::after {
 	content: url(../img/chevron-down-solid.svg);
 	display: inline-block;
-	line-height: 1rem;
+	
 	width: .5rem;
+	line-height: 1rem;
 	margin-left: .5rem;
 }
 
@@ -145,10 +153,21 @@ h3 {
 	transform: rotate(180deg);
 }
 
+/* Header */
+
+header .bar_sony_logo {
+	height: var(--sony-logo-bar-height);
+}
+
+header .sony_logo {
+	height: calc(var(--sony-logo-bar-height) / 3);
+}
+
 #topNavbar .nav-link {
 	color: black; 
-	font-weight: 550;
+	font-weight: 600;
 }
+
 #topNavbar .nav-link:hover {
 	color: var(--light-blue-color);
 }
@@ -174,21 +193,13 @@ h3 {
 	box-shadow: 0 0 5px gray;
 }
 
-/* Header */
-
-header .bar_sony_logo {
-	height: var(--sony-logo-bar-height);
-}
-
-header .sony_logo {
-	height: calc(var(--sony-logo-bar-height) / 3);
-}
-
 /* Main */
 
 main {
 	padding-top: var(--header-height);
 }
+
+/* Jumbotrons */
 
 .jumbotron {
 	background-position: top;
@@ -204,17 +215,29 @@ main {
 	width: 60%;
 }
 
-.returnal_jumbotron {
+.jumbotron h2 {
+	font-size: 40px;
+}
+
+/* Jumbotron backgrounds */
+#returnal_jumbotron {
 	background-image: url(../img/jumbo-bg.png);
 }
 
-.itTakesTwo_jumbotron {
+#itTakesTwo_jumbotron {
 	background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
 }
 
+
+/* Mock slide show */
 .slide_thumb {
 	border: 3px solid transparent;
 	transition: margin .6s;
+}
+
+.slide_thumb:hover {
+	cursor: pointer;
+	margin-top: -15px;
 }
 
 .slide_selected {
@@ -225,10 +248,7 @@ main {
 	border: 3px solid transparent;
 }
 
-.slide_thumb:hover {
-	margin-top: -15px;
-}
-
+/* Thumbnails */
 .thumb {
 	opacity: .75;
 }
@@ -256,10 +276,12 @@ main {
 	transform: scale(1.03);
 }
 
+/* Section heading images */
 .title-logo {
 	width: 60%;
 }
 
+/* Social media section */
 @media screen and (min-width: 576px) {
 	
 	#socialMedia .row{
