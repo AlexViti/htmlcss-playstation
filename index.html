@@ -20,6 +20,11 @@
 	<link rel="icon" type="image/png" href="img/favicon/ps-logo-favicon-32.png" sizes="32x32"/>
 	<link rel="icon" type="image/png" href="img/favicon/ps-logo-favicon-96.png" sizes="96x96"/>
 
+	<!-- Raleway Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -32,26 +37,37 @@
 			<img src="img/sony_logo.svg" class="sony_logo" alt="Logo Sony">
 		</div>
 
-		<!-- Navbar -->
-
-		<nav class="navbar navbar-expand-lg navbar-light bg-white" id="topNavbar">
+		<!-- Navbar with brand and two sets of link in a collapse menu -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-white p-1" id="topNavbar">
+			
 			<div class="container-fluid">
 			  
+				<!-- Navbar brand with logo and hidden main heading -->
 				<a class="navbar-brand" href="index.html">
 				  <img src="img/play_logo.svg" alt="PlayStation logo">
 				  <h1 class="d-none">Playstation.com</h1>
 			  </a>
-
+	  
+			  <!-- Hamburger menu toggler -->
 			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				 <span class="navbar-toggler-icon"></span>
-			  </button>
-
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<!-- Collapse menu -->
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					
+			  		<!-- Left side of navbar with 6 dropdown buttons -->
+					<ul class="navbar-nav me-auto">
+
 						<li class="nav-item">
+							
+							<!-- Dropdown button -->
 							<a class="nav-link dropdown-chevron me-3" href="#" id="navbarDropdownGames" role="button" data-bs-toggle="dropdown" aria-expanded="false">Giochi</a>
+
+							<!-- Dropdown menu -->
 							<ul class="dropdown-menu m-0 w-100 border-0 rounded-0 text-center" aria-labelledby="navbarDropdownGames">
 
+								<!-- 3 linked cards -->
 								<ul class="list-inline">
 									<li class="list-inline-item">
 										<a class="dropdown-item nav_ico" href="#">
@@ -73,6 +89,7 @@
 									</li>
 								</ul>
 								
+								<!-- bottom part of the dropdown menu with 3 link after a horizzontal rule -->
 								<li><hr class="dropdown-divider"></li>
 								<ul class="d-flex justify-content-center nav_list">
 									<li><a href="#">Link Giochi</a></li>
@@ -293,7 +310,7 @@
 
 						<button type="button" class="btn btn-search p-0"><img class="w-50" src="img/lens.svg" alt=""></button>
 					</ul>		
-			  </div>
+				</div>
 
 			</div>
 		</nav>
@@ -303,11 +320,14 @@
 	<!-- Main -->
 
 	<main>
-		<!-- Mock carousel slides -->
-		<div id="returnal_jumbotron" class="jumbotron">
 
+		<!-- Jumbotron section with a full width background image -->
+		<div id="returnal_jumbotron" class="jumbotron">
+			
+			<!-- Mock carousel slides show -->
 			<div class="container text-white">
 
+				<!-- Jumbotron section with the game title as an image, a title, a discription and a button for purchase it  -->
 				<div class="row align-items-end py-5">
 					<div class="col col-xl-4">
 						<img src="img/returnal-hero-banner-logo.png" class="hero-banner-logo" alt="">
@@ -363,7 +383,9 @@
 			</div>
 		</div>
 
-		<section id="ps5" class="py-5  lh-md">
+
+		<!-- PS5 section with a section header, a two column subsection and 5 tumbnails -->
+		<section id="ps5" class="py-5 lh-md">
 			<div class="container text-center">
 				<div class="text-uppercase text-light-blue">Play has no limit</div>
 				<h2>Ecco la PlayStation 5</h2>
@@ -371,9 +393,9 @@
 			</div>
 
 			<div class="container pt-5">
-				<div class="row row-cols-1 row-cols-md-2 align-items-center">
+				<div class="row row-cols-1 row-cols-md-2 g-3 align-items-center">
 					<div class="col">
-						<h2>Console PlayStation 5</h2>
+						<h3>Console PlayStation 5</h3>
 						<div class="subtitle mt-4">Sperimenta la nuova generazione di incredibili giochi PlayStation.</div>
 						<a href="#" class="botn botn-blue mt-4">Maggiori informazioni</a>
 					</div>
@@ -418,6 +440,7 @@
 			</div>
 		</section>
 
+		<!-- Jumbotron section -->
 		<div id="itTakesTwo_jumbotron" class="jumbotron">
 
 			<div class="container text-white">
@@ -435,11 +458,14 @@
 			
 		</div>
 
-		<section id="new-releases" class="bg-dark py-4">
+		<!-- Section with title, subtitle and 12 game cards -->
+		<section id="new-releases" class="bg-dark py-5">
 
 			<div class="container text-white">
+
 				<h3>Nuove uscite</h3>
 				<div class="fs-3">Giochi incredibili per PS4 e PS5 disponibili ora</div>
+
 				<div class="row row-cols-2 row-cols-sm-3 row-cols-lg-6 g-5 g-md-4 mt-3">
 					<div class="col new-releases-thumb">
 						<img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="Tony Hawks" class="img-fluid rounded-10">
@@ -552,7 +578,8 @@
 		</section>
 
 		<section id="store" class="mt-5">
-			<div class="container text-center">
+
+			<div class="container text-center py-5">
 
 				<h2>Nuovi sconti sul PlayStation Store</h2>
 				<div class="subtitle mt-4">Sconti pazzeschi, collezioni curate e saldi stagionali su PS5, PS4 e PS VR, tutti in un unico posto.</div>
@@ -583,10 +610,9 @@
 				<div class="row align-items-center">
 
 					<div class="col py-5 py-md-0">
-						<h2><img src="img/ps-now-logo-two-column.png" class="title-logo" alt="">
-						</h2> 
-						<p class="text-white mt-3">Ottieni l'accesso immediato a una vastissima raccolta di oltre 800 giochi per PS4, PS3 e PS2 su PS4 o PC Windowsm con nuovi titoli aggiunti ogni mese</p>
-						<a href="#" class="botn botn-white mt-3">Esplora PlayStation Plus</a>
+						<h2><img src="img/ps-now-logo-two-column.png" class="title-logo" alt=""></h2> 
+						<p class="text-white mt-3">Ottieni l'accesso immediato a una vastissima raccolta di oltre 800 giochi per PS4, PS3 e PS2 su PS4 o PC Windows con nuovi titoli aggiunti ogni mese.</p>
+						<a href="#" class="botn botn-white mt-3" function="button">Esplora PlayStation Now</a>
 					</div>
 
 					<div class="col d-none d-md-block">
@@ -600,6 +626,7 @@
 		</section>
 
 		<section id="socialMedia" class="container text-center my-5 my-md-5 py-md-5">
+
 			<h3>Seguici sui social media</h3>
 
 			<div class="row row-cols-2 row-cols-sm-4 mt-5 mx-auto">
@@ -622,7 +649,7 @@
 
 	<footer class="bg-dark-blue text-white py-5">
 
-		<div class="container  my-5">
+		<div class="container my-5">
 
 			<div class="row row-cols-1 row-cols-lg-2">
 
@@ -640,62 +667,32 @@
 						<div class="col">
 
 							<ul class="list-unstyled">
-								<li>
-									<a href="#" class="text-white text-decoration-none">Link footer n</a>
-								</li>
-								<li>
-									<a href="#" class="text-white text-decoration-none">Link footer n</a>
-								</li>
-								<li>
-									<a href="#" class="text-white text-decoration-none">Link footer n</a>
-								</li>
-								<li>
-									<a href="#" class="text-white text-decoration-none">Link footer n</a>
-								</li>
-								<li>
-									<a href="#" class="text-white text-decoration-none">Link footer n</a>
-								</li>
+								<li><a href="#" class="text-white text-decoration-none">Link footer n</a></li>
+								<li><a href="#" class="text-white text-decoration-none">Link footer n</a></li>
+								<li><a href="#" class="text-white text-decoration-none">Link footer n</a></li>
+								<li><a href="#" class="text-white text-decoration-none">Link footer n</a></li>
+								<li><a href="#" class="text-white text-decoration-none">Link footer n</a></li>
 							</ul>
 
 						</div>
 
 						<div class="col">
 							<ul class="list-unstyled">
-								<li>
-									<a href="#" class="text-white text-decoration-none">Link footer n</a>
-								</li>
-								<li>
-									<a href="#" class="text-white text-decoration-none">Link footer n</a>
-								</li>
-								<li>
-									<a href="#" class="text-white text-decoration-none">Link footer n</a>
-								</li>
-								<li>
-									<a href="#" class="text-white text-decoration-none">Link footer n</a>
-								</li>
-								<li>
-									<a href="#" class="text-white text-decoration-none">Link footer n</a>
-								</li>
-								<li>
-									<a href="#" class="text-white text-decoration-none">Link footer n</a>
-								</li>
-								<li>
-									<a href="#" class="text-white text-decoration-none">Link footer n</a>
-								</li>
+								<li><a href="#" class="text-white text-decoration-none">Link footer n</a></li>
+								<li><a href="#" class="text-white text-decoration-none">Link footer n</a></li>
+								<li><a href="#" class="text-white text-decoration-none">Link footer n</a></li>
+								<li><a href="#" class="text-white text-decoration-none">Link footer n</a></li>
+								<li><a href="#" class="text-white text-decoration-none">Link footer n</a></li>
+								<li><a href="#" class="text-white text-decoration-none">Link footer n</a></li>
+								<li><a href="#" class="text-white text-decoration-none">Link footer n</a></li>
 							</ul>
 						</div>
 
 						<div class="col">
 							<ul class="list-unstyled">
-								<li>
-									<a href="#" class="text-white text-decoration-none">Link footer n</a>
-								</li>
-								<li>
-									<a href="#" class="text-white text-decoration-none">Link footer n</a>
-								</li>
-								<li>
-									<a href="#" class="text-white text-decoration-none">Link footer n</a>
-								</li>
+								<li><a href="#" class="text-white text-decoration-none">Link footer n</a></li>
+								<li><a href="#" class="text-white text-decoration-none">Link footer n</a></li>
+								<li><a href="#" class="text-white text-decoration-none">Link footer n</a></li>
 							</ul>
 						</div>
 					</nav>
